@@ -5,27 +5,30 @@ import Checkout from "./pages/Checkout"
 import Navbar from "./components/default/Navbar"
 import ProtectedRoute from "./components/ProtectedRoute"
 import { AuthProvider } from "./context/AuthContext"
+import { CartProvider } from "./context/CartContext"
 
 const App = () => {
   return (
     <AuthProvider>
-      <div>
-        {/* navbar */}
-        <Navbar />
-        {/* routes */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/auth" element={<Auth />} />
-          <Route 
-            path="/checkout" 
-            element={
-              <ProtectedRoute>
-                <Checkout />
-              </ProtectedRoute>
-            } 
-          />
-        </Routes>
-      </div>
+      <CartProvider>
+        <div>
+          {/* navbar */}
+          <Navbar />
+          {/* routes */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route 
+              path="/checkout" 
+              element={
+                <ProtectedRoute>
+                  <Checkout />
+                </ProtectedRoute>
+              } 
+            />
+          </Routes>
+        </div>
+      </CartProvider>
     </AuthProvider>
   )
 }
