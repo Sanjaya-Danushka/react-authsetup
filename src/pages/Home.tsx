@@ -9,398 +9,281 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-background pt-16">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden min-h-screen flex items-center">
-        {/* Animated Background Layers */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Premium Background */}
         <div className="absolute inset-0">
-          {/* Main Background */}
+          {/* High-quality background image */}
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-pulse"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&h=1080&fit=crop")`
+              backgroundImage: `url("https://images.unsplash.com/photo-1472851296607-05ab3db4d95f?w=1920&h=1080&fit=crop&auto=format")`
             }}
           ></div>
           
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-blue-900/60 to-indigo-900/80 animate-gradient"></div>
+          {/* Elegant gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/70"></div>
           
-          {/* Animated Particles */}
-          <div className="absolute inset-0">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
-            <div className="absolute top-40 right-10 w-72 h-72 bg-yellow-500/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-500/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
-          </div>
-          
-          {/* Pattern Overlay */}
+          {/* Subtle pattern overlay */}
           <div 
-            className="absolute inset-0 opacity-30"
+            className="absolute inset-0 opacity-20"
             style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")`
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E")`
             }}
           ></div>
         </div>
         
-        {/* Content */}
-        <div className="relative mx-auto max-w-7xl px-6 py-20 text-center">
-          {/* Floating Badge */}
-          <div className="mb-8 inline-flex items-center rounded-full bg-white/20 px-6 py-3 text-sm backdrop-blur-xl border border-white/30 shadow-2xl animate-float">
-            <Zap className="mr-2 h-4 w-4 text-yellow-300" />
-            <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent font-semibold">
-              ✨ New Collection 2024
-            </span>
+        {/* Content Container */}
+        <div className="relative z-10 mx-auto max-w-6xl px-8 text-center">
+          {/* Premium Badge */}
+          <div className="mb-8 inline-flex items-center rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 px-6 py-3 text-sm font-medium text-amber-200 backdrop-blur-sm border border-amber-400/30 shadow-lg">
+            <span className="mr-2">🔥</span>
+            <span>Premium Collection 2024</span>
           </div>
 
-          {/* Main Title with Animation */}
-          <div className="space-y-4 mb-8">
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight">
-              <span className="block bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent animate-shimmer">
-                Welcome to
+          {/* Elegant Typography */}
+          <div className="mb-8 space-y-4">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-light tracking-wide text-white">
+              <span className="block font-extralight">Discover</span>
+              <span className="block font-bold bg-gradient-to-r from-amber-300 via-orange-300 to-amber-400 bg-clip-text text-transparent">
+                Excellence
               </span>
             </h1>
-            <h2 className="text-7xl sm:text-8xl lg:text-9xl font-black tracking-tight">
-              <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-text">
-                ShopHub
-              </span>
+            
+            <h2 className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tight text-white">
+              ShopHub
             </h2>
           </div>
 
-          {/* Description */}
-          <p className="mx-auto mb-12 max-w-4xl text-xl sm:text-2xl leading-relaxed text-white/90 font-light animate-slide-up">
-            Discover premium products with unbeatable prices and fast delivery. 
-            Shop the latest trends in tech, fashion, and lifestyle.
+          {/* Refined Description */}
+          <p className="mx-auto mb-12 max-w-3xl text-lg sm:text-xl leading-relaxed text-white/90 font-light">
+            Experience the finest selection of premium products, curated for those who appreciate quality, 
+            style, and exceptional service.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <button className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-purple-600 to-blue-600 px-10 py-5 text-lg font-bold text-white shadow-2xl transition-all hover:scale-105 hover:shadow-3xl animate-slide-up animation-delay-200">
+          {/* Premium CTA Section */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <button className="group relative overflow-hidden rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-12 py-4 text-lg font-semibold text-white shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-105">
               <span className="relative z-10 flex items-center gap-3">
-                <ShoppingCart className="h-6 w-6" />
-                Shop Now
+                <ShoppingCart className="h-5 w-5" />
+                Start Shopping
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 transform translate-y-full transition-transform group-hover:translate-y-0"></div>
-              <div className="absolute inset-0 bg-white/20 transform -translate-x-full transition-transform group-hover:translate-x-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-amber-500 transform translate-y-full transition-transform duration-300 group-hover:translate-y-0"></div>
             </button>
             
-            <button className="group rounded-2xl border-2 border-white/50 px-10 py-5 text-lg font-semibold text-white backdrop-blur-xl transition-all hover:border-white/80 hover:bg-white/20 hover:scale-105 shadow-xl animate-slide-up animation-delay-400">
+            <button className="group rounded-full border-2 border-white/30 px-12 py-4 text-lg font-medium text-white backdrop-blur-sm transition-all duration-300 hover:border-white/50 hover:bg-white/10 hover:scale-105">
               <span className="flex items-center gap-3">
-                Explore Products
-                <svg className="h-5 w-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                Explore Collection
+                <svg className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </span>
             </button>
           </div>
 
-          {/* Animated Stats */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="group rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-6 transition-all hover:bg-white/20 hover:scale-105 animate-float animation-delay-600">
-              <div className="text-4xl font-black bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">10K+</div>
-              <div className="text-white/80 font-medium">Products</div>
+          {/* Elegant Stats Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400 mb-2">50K+</div>
+              <div className="text-sm text-white/70 uppercase tracking-wider">Happy Customers</div>
             </div>
-            <div className="group rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-6 transition-all hover:bg-white/20 hover:scale-105 animate-float animation-delay-800">
-              <div className="text-4xl font-black bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">24/7</div>
-              <div className="text-white/80 font-medium">Support</div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400 mb-2">1000+</div>
+              <div className="text-sm text-white/70 uppercase tracking-wider">Premium Products</div>
             </div>
-            <div className="group rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-6 transition-all hover:bg-white/20 hover:scale-105 animate-float animation-delay-1000">
-              <div className="text-4xl font-black bg-gradient-to-r from-pink-400 to-orange-400 bg-clip-text text-transparent mb-2">Free</div>
-              <div className="text-white/80 font-medium">Shipping</div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400 mb-2">24/7</div>
+              <div className="text-sm text-white/70 uppercase tracking-wider">Premium Support</div>
             </div>
-            <div className="group rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-6 transition-all hover:bg-white/20 hover:scale-105 animate-float animation-delay-1200">
-              <div className="text-4xl font-black bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent mb-2">30 Days</div>
-              <div className="text-white/80 font-medium">Returns</div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-amber-400 mb-2">Free</div>
+              <div className="text-sm text-white/70 uppercase tracking-wider">Express Shipping</div>
             </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-scroll"></div>
+        {/* Elegant Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-xs text-white/60 uppercase tracking-wider">Scroll</span>
+            <div className="w-0.5 h-12 bg-white/30 rounded-full"></div>
           </div>
         </div>
       </section>
 
-      {/* FEATURES SECTION */}
-      <section className="relative py-24 overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-slate-100"></div>
-        <div 
-          className="absolute inset-0 opacity-40"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}
-        ></div>
-        
-        <div className="relative mx-auto max-w-7xl px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-6 bg-gradient-to-r from-slate-900 to-slate-600 bg-clip-text text-transparent">
-              Why Choose ShopHub?
+      {/* PREMIUM FEATURES SECTION */}
+      <section className="relative py-32 bg-gradient-to-br from-slate-50 to-slate-100">
+        <div className="relative mx-auto max-w-6xl px-8">
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+              Why Choose <span className="bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">ShopHub</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're committed to providing you with the best shopping experience possible
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">
+              Experience shopping redefined with our premium features and exceptional service
             </p>
           </div>
 
+          {/* Premium Features Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Feature 1 */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl transform scale-95 group-hover:scale-100 transition-transform duration-300"></div>
-              <div className="relative text-center p-8 rounded-3xl bg-white/50 backdrop-blur-sm border border-white/20 shadow-xl">
-                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 text-white shadow-lg transform group-hover:scale-110 transition-all duration-300">
-                  <Shield className="h-10 w-10" />
-                </div>
-                <h3 className="mb-3 text-xl font-bold text-foreground">Secure Payment</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Your payment information is always safe and encrypted with industry-standard security
-                </p>
+            <div className="group text-center">
+              <div className="mb-8 mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-lg transform group-hover:scale-110 transition-all duration-300">
+                <Shield className="h-8 w-8" />
               </div>
+              <h3 className="mb-4 text-xl font-bold text-slate-900">Secure Payment</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Bank-level security with encrypted transactions and fraud protection
+              </p>
             </div>
 
             {/* Feature 2 */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl transform scale-95 group-hover:scale-100 transition-transform duration-300"></div>
-              <div className="relative text-center p-8 rounded-3xl bg-white/50 backdrop-blur-sm border border-white/20 shadow-xl">
-                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 text-white shadow-lg transform group-hover:scale-110 transition-all duration-300">
-                  <Zap className="h-10 w-10" />
-                </div>
-                <h3 className="mb-3 text-xl font-bold text-foreground">Fast Delivery</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Get your orders delivered within 2-3 business days with express shipping options
-                </p>
+            <div className="group text-center">
+              <div className="mb-8 mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-600 text-white shadow-lg transform group-hover:scale-110 transition-all duration-300">
+                <Zap className="h-8 w-8" />
               </div>
+              <h3 className="mb-4 text-xl font-bold text-slate-900">Express Delivery</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Same-day delivery available on select items with real-time tracking
+              </p>
             </div>
 
             {/* Feature 3 */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-orange-500/10 rounded-3xl transform scale-95 group-hover:scale-100 transition-transform duration-300"></div>
-              <div className="relative text-center p-8 rounded-3xl bg-white/50 backdrop-blur-sm border border-white/20 shadow-xl">
-                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-orange-600 text-white shadow-lg transform group-hover:scale-110 transition-all duration-300">
-                  <Star className="h-10 w-10" />
-                </div>
-                <h3 className="mb-3 text-xl font-bold text-foreground">Quality Products</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Curated selection of premium quality items from trusted brands worldwide
-                </p>
+            <div className="group text-center">
+              <div className="mb-8 mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-red-500 to-pink-600 text-white shadow-lg transform group-hover:scale-110 transition-all duration-300">
+                <Star className="h-8 w-8" />
               </div>
+              <h3 className="mb-4 text-xl font-bold text-slate-900">Premium Quality</h3>
+              <p className="text-slate-600 leading-relaxed">
+                Handpicked products from world-renowned luxury brands
+              </p>
             </div>
 
             {/* Feature 4 */}
-            <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-yellow-500/10 rounded-3xl transform scale-95 group-hover:scale-100 transition-transform duration-300"></div>
-              <div className="relative text-center p-8 rounded-3xl bg-white/50 backdrop-blur-sm border border-white/20 shadow-xl">
-                <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-yellow-600 text-white shadow-lg transform group-hover:scale-110 transition-all duration-300">
-                  <ShoppingCart className="h-10 w-10" />
-                </div>
-                <h3 className="mb-3 text-xl font-bold text-foreground">Easy Returns</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  30-day hassle-free return policy on all items with no questions asked
-                </p>
+            <div className="group text-center">
+              <div className="mb-8 mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-purple-600 text-white shadow-lg transform group-hover:scale-110 transition-all duration-300">
+                <ShoppingCart className="h-8 w-8" />
               </div>
+              <h3 className="mb-4 text-xl font-bold text-slate-900">Easy Returns</h3>
+              <p className="text-slate-600 leading-relaxed">
+                60-day return policy with free pickup and instant refunds
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* PRODUCTS SECTION */}
-      <section className="relative py-24">
-        {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white to-slate-50"></div>
-        
-        <div className="relative mx-auto max-w-7xl px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-6 bg-gradient-to-r from-slate-900 to-slate-600 bg-clip-text text-transparent">
-              Featured Products
+      {/* PREMIUM PRODUCTS SECTION */}
+      <section className="relative py-32 bg-white">
+        <div className="relative mx-auto max-w-6xl px-8">
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+              <span className="bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">Featured</span> Products
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Discover our handpicked selection of premium products
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed mb-8">
+              Explore our curated collection of premium products selected for quality and style
             </p>
             <Link
               to="/products"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-primary/80 px-8 py-3 text-white font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-8 py-4 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               View All Products
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
           </div>
 
-          {/* GRID */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {products.map((product, index) => (
-              <div 
-                key={product.id} 
-                className="animate-slide-up"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <ProductCard product={product} />
-              </div>
+          {/* Products Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIALS SECTION */}
-      <section className="bg-background py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              What Our Customers Say
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of satisfied customers who love shopping with us
-            </p>
+      {/* PREMIUM NEWSLETTER SECTION */}
+      <section className="relative py-32 bg-gradient-to-br from-amber-50 to-orange-50">
+        <div className="relative mx-auto max-w-4xl px-8 text-center">
+          <div className="mb-8">
+            <span className="inline-flex items-center rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-800">
+              🎯 Exclusive Offers
+            </span>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Testimonial 1 */}
-            <div className="rounded-2xl bg-card border border-border p-6 shadow-sm">
-              <div className="flex items-center mb-4">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <p className="text-muted-foreground mb-4">
-                "Amazing quality products and super fast delivery! I've been a customer for over a year and couldn't be happier."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-sm font-semibold text-primary">JD</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">John Doe</p>
-                  <p className="text-sm text-muted-foreground">Verified Buyer</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="rounded-2xl bg-card border border-border p-6 shadow-sm">
-              <div className="flex items-center mb-4">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <p className="text-muted-foreground mb-4">
-                "Best online shopping experience! The customer service is exceptional and the return policy is hassle-free."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-sm font-semibold text-primary">SM</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">Sarah Miller</p>
-                  <p className="text-sm text-muted-foreground">Verified Buyer</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="rounded-2xl bg-card border border-border p-6 shadow-sm">
-              <div className="flex items-center mb-4">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <p className="text-muted-foreground mb-4">
-                "Great prices and amazing product quality! I love how easy it is to find exactly what I'm looking for."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-sm font-semibold text-primary">MJ</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">Mike Johnson</p>
-                  <p className="text-sm text-muted-foreground">Verified Buyer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* NEWSLETTER SECTION */}
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Stay Updated with Latest Deals
+          <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+            Stay <span className="bg-gradient-to-r from-amber-500 to-orange-600 bg-clip-text text-transparent">Ahead</span> of the Curve
           </h2>
-          <p className="text-lg opacity-90 mb-8">
-            Subscribe to our newsletter and get exclusive offers and updates
+          <p className="text-xl text-slate-600 mb-12 font-light leading-relaxed">
+            Get exclusive access to new arrivals, special discounts, and insider tips delivered straight to your inbox
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
             <input
               type="email"
-              placeholder="Enter your email"
-              className="flex-1 rounded-lg px-4 py-3 text-foreground bg-background/90 backdrop-blur-sm border border-white/20 focus:outline-none focus:ring-2 focus:ring-white/30"
+              placeholder="Enter your email address"
+              className="flex-1 rounded-full border border-slate-300 px-6 py-4 text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
             />
-            <button className="rounded-lg bg-background px-6 py-3 font-semibold text-primary hover:bg-background/90 transition">
-              Subscribe
+            <button className="rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-8 py-4 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              Subscribe Now
             </button>
           </div>
+          <p className="mt-6 text-sm text-slate-500">
+            Join 50,000+ subscribers. No spam, unsubscribe anytime.
+          </p>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-muted border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Company Info */}
-            <div>
-              <h3 className="text-xl font-bold text-primary mb-4">ShopHub</h3>
-              <p className="text-muted-foreground mb-4">
-                Your trusted online shopping destination for quality products and exceptional service.
+      {/* PREMIUM FOOTER */}
+      <footer className="relative bg-slate-900 text-white py-20">
+        <div className="relative mx-auto max-w-6xl px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="col-span-1 md:col-span-2">
+              <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+                ShopHub
+              </h3>
+              <p className="text-slate-400 mb-8 leading-relaxed max-w-md">
+                Your premium shopping destination for quality products and exceptional service. 
+                Experience shopping redefined with our curated collections.
               </p>
               <div className="flex gap-4">
-                <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <span className="text-xs text-primary">f</span>
-                </div>
-                <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <span className="text-xs text-primary">t</span>
-                </div>
-                <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <span className="text-xs text-primary">i</span>
-                </div>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-amber-500 hover:text-white transition-colors">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-amber-500 hover:text-white transition-colors">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </a>
+                <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-amber-500 hover:text-white transition-colors">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.77-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069 3.204 0 3.584.012 4.85.069 3.264.148 4.77 1.699 4.919 4.919.058 1.265.07 1.645.07 4.849 0 3.204-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.645.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                  </svg>
+                </a>
               </div>
             </div>
-
-            {/* Quick Links */}
             <div>
-              <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">About Us</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Contact</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">FAQs</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Shipping Info</a></li>
+              <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+              <ul className="space-y-3">
+                <li><a href="#" className="text-slate-400 hover:text-amber-400 transition-colors">About Us</a></li>
+                <li><a href="#" className="text-slate-400 hover:text-amber-400 transition-colors">Products</a></li>
+                <li><a href="#" className="text-slate-400 hover:text-amber-400 transition-colors">Contact</a></li>
+                <li><a href="#" className="text-slate-400 hover:text-amber-400 transition-colors">FAQ</a></li>
               </ul>
             </div>
-
-            {/* Categories */}
             <div>
-              <h4 className="font-semibold text-foreground mb-4">Categories</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Electronics</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Fashion</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Home & Garden</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Sports</a></li>
-              </ul>
-            </div>
-
-            {/* Customer Service */}
-            <div>
-              <h4 className="font-semibold text-foreground mb-4">Customer Service</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Track Order</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Returns</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Warranty</a></li>
-                <li><a href="#" className="text-muted-foreground hover:text-primary transition">Support</a></li>
+              <h4 className="text-lg font-semibold mb-6">Customer Service</h4>
+              <ul className="space-y-3">
+                <li><a href="#" className="text-slate-400 hover:text-amber-400 transition-colors">Shipping Info</a></li>
+                <li><a href="#" className="text-slate-400 hover:text-amber-400 transition-colors">Returns</a></li>
+                <li><a href="#" className="text-slate-400 hover:text-amber-400 transition-colors">Track Order</a></li>
+                <li><a href="#" className="text-slate-400 hover:text-amber-400 transition-colors">Size Guide</a></li>
               </ul>
             </div>
           </div>
-
-          <div className="border-t border-border mt-8 pt-8 text-center">
-            <p className="text-muted-foreground">
-              © 2024 ShopHub. All rights reserved. Made with ❤️ for amazing customers.
-            </p>
+          <div className="pt-8 border-t border-slate-800 text-center text-slate-400">
+            <p>&copy; 2024 ShopHub. All rights reserved. Crafted with ❤️ for premium shopping experience.</p>
           </div>
         </div>
       </footer>

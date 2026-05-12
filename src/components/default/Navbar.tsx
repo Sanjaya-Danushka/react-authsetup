@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom"
 import { useContext } from "react"
-import { ShoppingCart } from "lucide-react"
+import { ShoppingCart, Moon, Sun } from "lucide-react"
 import { AuthContext } from "../../context/AuthContext"
 import { CartContext } from "../../context/CartContext"
+import { ThemeContext } from "../../context/ThemeContext"
 
 const Navbar = () => {
   const authContext = useContext(AuthContext)
   const cartContext = useContext(CartContext)
+  const themeContext = useContext(ThemeContext)
   
   if (!authContext) {
     return null
@@ -14,13 +16,14 @@ const Navbar = () => {
 
   const { user, logout } = authContext
   const cartItemsCount = cartContext ? cartContext.getCartItemsCount() : 0
+  const { isDark, toggleTheme } = themeContext || { isDark: false, toggleTheme: () => {} }
 
   const handleLogout = () => {
     logout()
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/10 backdrop-blur-xl">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/10 backdrop-blur-xl transition-all duration-300">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* LOGO */}
         <Link className="text-2xl font-bold text-primary" to="/">
@@ -70,6 +73,14 @@ const Navbar = () => {
             )}
           </Link>
         </div>
+
+        {/* THEME TOGGLE */}
+        <button
+          onClick={toggleTheme}
+          className="rounded-lg p-2 text-muted-foreground transition hover:bg-muted hover:text-foreground"
+        >
+          {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+        </button>
 
         {/* AUTH SECTION */}
         <div className="flex items-center gap-3">
