@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Auth from "./pages/Auth"
 import Checkout from "./pages/Checkout"
+import About from "./pages/About"
+import Products from "./pages/Products"
+import Contact from "./pages/Contact"
 import Navbar from "./components/default/Navbar"
 import ProtectedRoute from "./components/ProtectedRoute"
 import { AuthProvider } from "./context/AuthContext"
@@ -18,6 +21,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/auth" element={<Auth />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contact" element={<Contact />} />
             <Route 
               path="/checkout" 
               element={

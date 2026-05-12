@@ -6,6 +6,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
     description:
       "Premium wireless headphones with noise cancellation and deep bass sound.",
+    category: "electronics",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
     description:
       "Modern smartwatch with fitness tracking and notification support.",
+    category: "electronics",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1527814050087-3793815479db",
     description:
       "Ergonomic gaming mouse with RGB lighting and fast response time.",
+    category: "electronics",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae",
     description:
       "Mechanical keyboard with customizable RGB keys and smooth typing.",
+    category: "electronics",
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
     description:
       "Durable backpack with multiple compartments for laptops and accessories.",
+    category: "fashion",
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1585386959984-a41552231658",
     description:
       "Portable Bluetooth speaker with rich sound and long battery life.",
+    category: "electronics",
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf",
     description:
       "Ultra HD 4K monitor perfect for gaming, design, and productivity.",
+    category: "electronics",
   },
   {
     id: 8,
@@ -62,6 +69,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
     description:
       "Professional DSLR camera with high-quality image and video capture.",
+    category: "electronics",
   },
   {
     id: 9,
@@ -69,6 +77,7 @@ const products = [
     price: 69.99,
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
     description: "Comfortable everyday sneakers with stylish modern design.",
+    category: "fashion",
   },
   {
     id: 10,
@@ -77,6 +86,7 @@ const products = [
     image: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455",
     description:
       "Ergonomic office chair with lumbar support and adjustable height.",
+    category: "home",
   },
 ]
 

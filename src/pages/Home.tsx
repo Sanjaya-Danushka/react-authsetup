@@ -6,10 +6,21 @@ const Home = () => {
   const products = getProducts()
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pt-16">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground">
-        {/* Background Pattern */}
+      <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&h=1080&fit=crop")`
+          }}
+        ></div>
+        
+        {/* Glass Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/80 backdrop-blur-md"></div>
+        
+        {/* Pattern Overlay */}
         <div 
           className="absolute inset-0 opacity-20"
           style={{
@@ -19,25 +30,25 @@ const Home = () => {
         
         <div className="relative mx-auto max-w-7xl px-6 py-32 text-center">
           {/* Badge */}
-          <div className="mb-6 inline-flex items-center rounded-full bg-white/10 px-4 py-2 text-sm backdrop-blur-sm">
+          <div className="mb-6 inline-flex items-center rounded-full bg-white/30 px-4 py-2 text-sm backdrop-blur-md border border-white/40 shadow-2xl">
             <Zap className="mr-2 h-4 w-4" />
             New Collection 2024
           </div>
 
-          <h1 className="mb-6 text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="mb-6 text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl text-white drop-shadow-2xl">
             Welcome to{" "}
-            <span className="block bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-white via-white/95 to-white/90 bg-clip-text text-transparent">
               ShopHub
             </span>
           </h1>
 
-          <p className="mx-auto mb-10 max-w-3xl text-xl leading-relaxed opacity-90">
+          <p className="mx-auto mb-10 max-w-3xl text-xl leading-relaxed text-white drop-shadow-xl">
             Discover premium products with unbeatable prices and fast delivery. 
             Shop the latest trends in tech, fashion, and lifestyle.
           </p>
 
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <button className="group relative overflow-hidden rounded-lg bg-white px-8 py-4 font-semibold text-primary shadow-lg transition-all hover:scale-105 hover:shadow-xl">
+            <button className="group relative overflow-hidden rounded-lg bg-white/30 px-8 py-4 font-semibold text-white backdrop-blur-md border border-white/40 shadow-2xl transition-all hover:scale-105 hover:shadow-3xl hover:bg-white/40">
               <span className="relative z-10 flex items-center gap-2">
                 <ShoppingCart className="h-5 w-5" />
                 Shop Now
@@ -45,28 +56,28 @@ const Home = () => {
               <div className="absolute inset-0 bg-white/20 transform translate-y-full transition-transform group-hover:translate-y-0"></div>
             </button>
             
-            <button className="rounded-lg border-2 border-white/30 px-8 py-4 font-semibold backdrop-blur-sm transition-all hover:border-white/50 hover:bg-white/10">
+            <button className="rounded-lg border-2 border-white/50 px-8 py-4 font-semibold text-white backdrop-blur-md transition-all hover:border-white/70 hover:bg-white/30 shadow-xl">
               Explore Products
             </button>
           </div>
 
           {/* Stats */}
           <div className="mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
-            <div className="text-center">
-              <div className="text-3xl font-bold">10K+</div>
-              <div className="text-sm opacity-75">Products</div>
+            <div className="rounded-2xl bg-white/20 p-6 backdrop-blur-md border border-white/30 shadow-xl">
+              <div className="text-3xl font-bold text-white">10K+</div>
+              <div className="text-sm text-white/90">Products</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold">24/7</div>
-              <div className="text-sm opacity-75">Support</div>
+            <div className="rounded-2xl bg-white/20 p-6 backdrop-blur-md border border-white/30 shadow-xl">
+              <div className="text-3xl font-bold text-white">24/7</div>
+              <div className="text-sm text-white/90">Support</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold">Free</div>
-              <div className="text-sm opacity-75">Shipping</div>
+            <div className="rounded-2xl bg-white/20 p-6 backdrop-blur-md border border-white/30 shadow-xl">
+              <div className="text-3xl font-bold text-white">Free</div>
+              <div className="text-sm text-white/90">Shipping</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold">30 Days</div>
-              <div className="text-sm opacity-75">Returns</div>
+            <div className="rounded-2xl bg-white/20 p-6 backdrop-blur-md border border-white/30 shadow-xl">
+              <div className="text-3xl font-bold text-white">30 Days</div>
+              <div className="text-sm text-white/90">Returns</div>
             </div>
           </div>
         </div>

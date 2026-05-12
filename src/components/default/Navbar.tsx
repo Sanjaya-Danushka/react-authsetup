@@ -20,7 +20,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="border-b border-border bg-background">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/10 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* LOGO */}
         <Link className="text-2xl font-bold text-primary" to="/">
@@ -34,6 +34,27 @@ const Navbar = () => {
             className="text-muted-foreground transition hover:text-primary"
           >
             Home
+          </Link>
+
+          <Link
+            to="/products"
+            className="text-muted-foreground transition hover:text-primary"
+          >
+            Products
+          </Link>
+
+          <Link
+            to="/about"
+            className="text-muted-foreground transition hover:text-primary"
+          >
+            About
+          </Link>
+
+          <Link
+            to="/contact"
+            className="text-muted-foreground transition hover:text-primary"
+          >
+            Contact
           </Link>
 
           <Link
